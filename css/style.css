@@ -1,0 +1,56 @@
+body {
+  background: url(../images/background.jpg) center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  font-size: 3vw;
+}
+
+#appName {
+  font-size: 3.5vw;
+  color: rgb(65, 0, 139);   
+  font-weight: bold;
+  text-align: center;
+  margin-left: 5%;
+}
+#map {
+    padding: 5px;
+}
+
+#controlsContainer {
+  height: 250px;
+}
+
+#form {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.label {
+  font-style: italic;
+  color: darkblue;
+  font-weight: bold;
+  text-align: left;
+}
+
+#output{
+  text-align: left;
+  font-size: 2em;
+  height: 200px;
+  margin-top: 250px;
+  margin-left: 5.5%;
+  overflow-y: scroll;
+  font-weight: bold;
+  display: none;
+}
+
+#reloadThePageButton {
+  display: none;
+}
+
+  
+

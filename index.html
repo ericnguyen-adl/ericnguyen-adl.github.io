@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
   <!-- Required meta tags -->
@@ -10,55 +10,48 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  <link href="css/styling.css" rel="stylesheet">
+  <title>Cycling Distance Calculation Application</title>
 
-  <title>Stopwatch App</title>
 </head>
 
 <body>
-  <!-- <div class="jumbotron"> -->
-    <div class="container-fluid">
-      <div id="header">Stopwatch</div>
-      <div id="lap"><span id="lapminutes">00</span>:<span id="lapseconds">00</span>:<span id="lapcentiseconds">00</span>
-      </div>
 
-      <div id="time"><span id="timeminutes">00</span>:<span id="timeseconds">00</span>:<span
-          id="timecentiseconds">00</span></div>
+  <div class="container-fluid">
 
-      <div id="controlsContainer" class="row">
-        <div class="col-3 offset-3">
-          <div id="startButton" class="control">
-            Start</div>
-          <div id="stopButton" class="control">
-            Stop</div>
-          <div id="resumeButton" class="control">
-            Resume</div>
-        </div>
-        <div class="col-3">
-          <div id="lapButton" class="control">
-            Lap</div>
-          <div id="resetButton" class="control">
-            Reset</div>
+    <div id="controlsContainer" class="row">
+      <div id="header" class="col-8">
+        <span id="appName">Cycling Distance Calculation App</span>
+        <!-- <p>This Application will calculate the distance between 2 suburbs for Cyclist</p> -->
+        <form id="form" class="was-validated">
+          <div class="form-group">
+            <label for="from" class="label">From:</label>
+            <input type="text" class="form-control" id="from" placeholder="Enter start location" required>            
+          </div>
+          <div class="form-group">
+            <label for="destination" class="label">Destination:</label>
+            <input type="text" class="form-control" id="destination" placeholder="Enter the destination" required>
+          </div>
+          <button type="button" class="btn btn-primary" id="submitButton"
+            onclick="displayDistanceMessage();">Submit</button>
 
-        </div>
+          <button type="button" class="btn btn-primary" id="reloadThePageButton" onclick="reloadThePage();">Calculate
+            for new route</button>
+        </form>
       </div>
-      <div id="laps">
-      </div>
+      <div id="map" class="col-4">fsdfsd</div>
     </div>
 
-    
+    <div id="output" class='alert-info'></div>
 
-  <!-- </div> -->
+  </div>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjXoGdehIRkukwdHydt8eMHs9eSsixT2s&callback=initMap&libraries=places"
+    defer></script>
 
 
-
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -68,7 +61,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/stopwatch.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+  <script type="text/javascript" src="js/app.js"></script>
+
 </body>
 
 </html>
