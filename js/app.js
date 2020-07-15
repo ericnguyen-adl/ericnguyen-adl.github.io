@@ -78,10 +78,9 @@ function displayDistanceMessage() {
 
 }
 
-function reloadThePage(){
-  
-  $("#output").html("Please be hided");
+function reloadThePage(){  
   window.location.reload(true);
+  $("#output").hide(); 
   $("#reloadThePageButton").hide(); 
 }
 
