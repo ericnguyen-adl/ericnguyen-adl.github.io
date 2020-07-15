@@ -7,23 +7,23 @@ body {
 }
 
 #header {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 #appName {
-  font-size: 3.5vw;
+  font-size: 3vw;
   color: rgb(65, 0, 139);   
   font-weight: bold;
   text-align: center;
-  margin-left: 5%;
 }
 #map {
-    padding: 5px;
+    margin: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 200px;
 }
 
-#controlsContainer {
-  height: 250px;
-}
+
 
 #form {
   padding-left: 8%;
@@ -39,10 +39,11 @@ body {
 
 #output{
   text-align: left;
-  font-size: 2em;
+  font-size: 3vw;
   height: 200px;
-  margin-top: 250px;
-  margin-left: 5.5%;
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-right: 8%;
   overflow-y: scroll;
   font-weight: bold;
   display: none;
