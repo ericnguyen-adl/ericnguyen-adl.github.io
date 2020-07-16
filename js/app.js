@@ -65,14 +65,17 @@ function displayDistanceMessage() {
       //display route in the map
       directionsDisplay.setDirections(result);
       $("#reloadThePageButton").show(); 
+      document.getElementById("output").scrollIntoView();
+      
 
     } else {
+      //show error message
+      $("#output").show(); 
+      $("#output").html("<div class='alert-danger'>Could not retrieve Cycling distance.</div>");
       //delete route from map
       directionsDisplay.setDirections({ routes: [] });
       //Set the center back to default area
-      map.setCenter({ lat: -34.882893, lng: 138.646250 });
-      //show error message
-      $("#output").html("<div class='alert-danger'>Could not retrieve Cycling distance.</div>");
+      map.setCenter({ lat: -34.882893, lng: 138.646250 });      
     }
   });
 
