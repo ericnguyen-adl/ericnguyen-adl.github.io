@@ -1,0 +1,60 @@
+body {
+  background: url(../images/background.jpg) center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  font-size: 3vw;
+}
+
+#appName {
+  font-size: 4vw;
+  color: rgb(65, 0, 139);   
+  font-weight: bold;
+  text-align: center;
+}
+#map {
+    margin: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 200px;
+}
+
+
+
+#form {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.label {
+  font-style: italic;
+  color: darkblue;
+  font-weight: bold;
+  text-align: left;
+}
+
+#output{
+  text-align: left;
+  font-size: 3vw;
+  /* height: 150px; */
+  margin-top: 80px;
+  margin-bottom: 10px;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 10px;
+  /* max-height: 200px; */
+  overflow-y: scroll;
+  font-weight: bold;
+  display: none;
+}
+
+#reloadThePageButton {
+  display: none;
+}
+
+  
+
