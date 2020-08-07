@@ -129,7 +129,7 @@ h4 {
 }
 
 .carousel-inner .carousel-item img {    
-  height: 400px;
+  height: 350px;
   margin: 0 auto;
 }
 
@@ -147,8 +147,8 @@ h4 {
 
 /*Style the pictures and nav-brand for different screens*/
 @media screen and (max-width:768px) {
-  .carousel-inner .carousel-item img {
-      height: 300px;
+  .carousel .carousel-inner .carousel-item img {
+      height: 250px;
   }
   .carousel-inner .carousel-caption h2 {
       font-size: 20px;
@@ -156,8 +156,8 @@ h4 {
 }
 
 @media screen and (max-width:400px) {
-  .carousel-inner .carousel-item img {
-      height: 200px;
+  .carousel .carousel-inner .carousel-item img {
+      height: 150px;
   }
   .carousel-inner .carousel-caption h2 {
       font-size: 15px;
