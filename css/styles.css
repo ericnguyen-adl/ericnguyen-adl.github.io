@@ -123,13 +123,16 @@ h4 {
 }
 
 #myCarousel {
-  width: 60%;
+  width: 70%;
+  height: auto;
   margin: 0 auto;
   text-align: center;
 }
 
-.carousel-inner .carousel-item img {    
-  height: 350px;
+.carousel-inner .carousel-item img {      
+  width: 80%;
+  /* height: 400px;  */
+  height: auto;
   margin: 0 auto;
 }
 
@@ -147,20 +150,38 @@ h4 {
 
 /*Style the pictures and nav-brand for different screens*/
 @media screen and (max-width:768px) {
-  .carousel .carousel-inner .carousel-item img {
-      height: 250px;
+  .carousel-inner .carousel-item img {
+      /* height: 300px; */
+      width: 85%;
+      height: auto;
   }
   .carousel-inner .carousel-caption h2 {
-      font-size: 20px;
+      font-size: 2.5vw;
   }
 }
 
 @media screen and (max-width:400px) {
-  .carousel .carousel-inner .carousel-item img {
-      height: 150px;
+  .carousel-inner .carousel-item img {
+    width: 95%;
+    height: auto;
+      /* height: 200px; */
   }
   .carousel-inner .carousel-caption h2 {
-      font-size: 15px;
+      font-size: 4vw;
+  }
+  #name {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .carousel-inner .carousel-item img {
+      /* height: 120px; */
+    width: 100%;
+    height: auto;
+  }
+  .carousel-inner .carousel-caption h2 {
+      font-size: 5vw;
   }
 }
 
@@ -10245,4 +10266,9 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+@media screen and (max-width:400px) {
+  #name {
+    font-size: 4vw;
+  }
 }
