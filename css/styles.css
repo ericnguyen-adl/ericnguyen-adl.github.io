@@ -110,6 +110,16 @@ h4 {
   font-weight: bold;
   background-size: cover;
 }
+.projects-fieldset {
+  border-color: #F4623a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.projects-legend {
+  width: auto;
+  font-style: italic;
+}
 
 #my-projects {
   padding-top: 50px;
@@ -162,7 +172,7 @@ h4 {
 
 @media screen and (max-width:500px) {
   #name {
-    font-size: 3.5vw;
+    font-size: 3.8vw;
   }
 }
 
@@ -174,9 +184,6 @@ h4 {
   }
   .carousel-inner .carousel-caption h2 {
       font-size: 4vw;
-  }
-  #name {
-    font-size: 4vw;
   }
 }
 
@@ -407,12 +414,12 @@ textarea {
   resize: vertical;
 }
 
-fieldset {
+/* fieldset {
   min-width: 0;
   padding: 0;
   margin: 0;
-  border: 0;
-}
+  border: 1px black;
+} */
 
 legend {
   display: block;
