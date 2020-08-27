@@ -70,7 +70,8 @@ body {
 }
 
 #about {
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 50%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-about.png");
+  /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 50%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-about.jpg"); */
+  background: url("../assets/img/bg-about2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -126,6 +127,11 @@ h4 {
   color: white;
   font-weight: bold;
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 20%, rgba(92, 77, 66, 0.8) 80%), url("../assets/img/bg-my-projects.jpg");
+  /* background: url("../assets/img/bg-my-projects1.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 #projects {
@@ -140,10 +146,11 @@ h4 {
 }
 
 .carousel-inner .carousel-item img {      
-  width: 80%;
+  width: 70%;
   /* height: 400px;  */
   height: auto;
   margin: 0 auto;
+  
 }
 
 .carousel-item .carousel-caption {
@@ -161,8 +168,8 @@ h4 {
 /*Style the pictures and nav-brand for different screens*/
 @media screen and (max-width:768px) {
   .carousel-inner .carousel-item img {
-      /* height: 300px; */
-      width: 85%;
+      height: 300px;      
+      width: 80%;
       height: auto;
   }
   .carousel-inner .carousel-caption h2 {
@@ -178,9 +185,9 @@ h4 {
 
 @media screen and (max-width:400px) {
   .carousel-inner .carousel-item img {
-    width: 95%;
+    width: 90%;
     height: auto;
-      /* height: 200px; */
+    /* height: 200px;  */   
   }
   .carousel-inner .carousel-caption h2 {
       font-size: 4vw;
@@ -189,8 +196,8 @@ h4 {
 
 @media screen and (max-width:300px) {
   .carousel-inner .carousel-item img {
-      /* height: 120px; */
-    width: 100%;
+    /* height: 120px;     */
+    width: 95%;
     height: auto;
   }
   .carousel-inner .carousel-caption h2 {
@@ -10212,7 +10219,8 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg"); */
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, rgba(92, 77, 66, 0.5) 100%),url("../assets/img/bg-masthead1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
