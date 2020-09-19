@@ -43,7 +43,7 @@ function displayDistanceMessage() {
     origin: document.getElementById("from").value,
     destination: document.getElementById("destination").value,
     // Set the travel mode: could be Driving, Walking, Bicycling, Transit
-    travelMode: google.maps.TravelMode.BICYCLING,
+    travelMode: google.maps.TravelMode.BICYCLING ,
     unitSystem: google.maps.UnitSystem.METRIC
   }
 
@@ -52,9 +52,7 @@ function displayDistanceMessage() {
     // If the DirectionStatus: status return OK (Valid Direction result) 
     if (status == google.maps.DirectionsStatus.OK) {
       $("#output").show(); 
-      // var durationInHours = Math.round(result.routes[0].legs[0].duration.value/3600); 
-      var durationInHours = result.routes[0].legs[0].duration.value/3600;
-      durationInHours = durationInHours.toFixed(2);  
+      var durationInHours = Math.round(result.routes[0].legs[0].duration.value/3600); 
       //Get distance and duration by Jquery
       $("#output").html("<div>The distance from: "
         + document.getElementById("from").value
