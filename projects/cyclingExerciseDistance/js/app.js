@@ -52,14 +52,14 @@ function displayDistanceMessage() {
     // If the DirectionStatus: status return OK (Valid Direction result) 
     if (status == google.maps.DirectionsStatus.OK) {
       $("#output").show(); 
-      var durationInHours = Math.round(result.routes[0].legs[0].duration.value/3600); 
+      var durationInHours = result.routes[0].legs[0].duration.value/3600.0; 
       //Get distance and duration by Jquery
       $("#output").html("<div>The distance from: "
         + document.getElementById("from").value
         + " to: " + document.getElementById("destination").value
         + " is: " + result.routes[0].legs[0].distance.text
         + ".<br />The estimated duration in cycling is: " + result.routes[0].legs[0].duration.text 
-        + ".<br />You will burn between " + durationInHours*450 + " to " + durationInHours*750
+        + ".<br />You will burn between " + (durationInHours*450).toFixed(2) + " to " + (durationInHours*750).toFixed(2)
         + " calories for that Exercise" + ".</div>");
 
       //display route in the map
