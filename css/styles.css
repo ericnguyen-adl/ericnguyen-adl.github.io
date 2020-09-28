@@ -10329,6 +10329,17 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+
+.p-text-indent{
+  text-indent: 30px;
+}
+.text-blue {
+  color: darkblue;
+  text-indent: 30px;
+}
+.seemore {
+  color: lightpink; 
+}
 @media screen and (max-width:400px) {
   #name {
     font-size: 4vw;
