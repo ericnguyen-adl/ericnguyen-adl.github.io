@@ -10335,6 +10335,7 @@ header.masthead h1 {
 }
 .li-indent{
   text-indent: 5px;
+  margin-top: -10px; 
 }
 .text-blue {
   color: darkblue;
